@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import pandas as pd
-
+#123123
 with open("ipa110106.XML", "r", encoding="utf8") as patent_xml :
     xml = patent_xml.read()
 
