@@ -4,7 +4,7 @@ def pair_n_overlap(images):
         src = cv2.imread(images[i], cv2.IMREAD_COLOR)
         try : 
             src = src.astype('uint8')
-        except AttributeError:
+        except AttributeError: #occurs when src is not correct img file
             print(src)
             print(f"AttributeError occurred on {i}th img")
             continue
