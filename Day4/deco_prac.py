@@ -5,7 +5,7 @@ def plus(func):
         print(args[1] * 30 + kwargs["one"])
     return inner
 
-@plus
+@plus ##
 def printer(msg, marks, *args, **kwargs) :
     print(msg)
 printer("Hello", "+", one = "DOH") 
