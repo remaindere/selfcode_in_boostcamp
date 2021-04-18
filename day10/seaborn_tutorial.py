@@ -20,7 +20,7 @@ boarding_list = sns.load_dataset("titanic") # dataset "titanic"
 # sns.relplot(x="age",y="survived", kind="line",col="deck",data=boarding_list)
 # plt.show()
 
-# sns.violinplot(x="survived",y="age",hue="sex",data=boarding_list)
-# plt.show()
+sns.violinplot(x="survived",y="age",hue="sex",data=boarding_list)
+plt.show()
 
 print(boarding_list.groupby(['deck','pclass'])['age'].mean('survived'))
